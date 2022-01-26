@@ -16,11 +16,11 @@ const App = () => {
     const name = event.target.value;
 
     if (name === 'good') {
-      setGoodFeedback(good + 1);
+      setGoodFeedback(prevState => prevState + 1);
     } else if (name === 'neutral') {
-      setNeutralFeedback(neutral + 1);
+      setNeutralFeedback(prevState => prevState + 1);
     } else if (name === 'bad') {
-      setbadFeedback(bad + 1);
+      setbadFeedback(prevState => prevState + 1);
     }
   };
 
