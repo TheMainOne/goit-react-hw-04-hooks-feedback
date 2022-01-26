@@ -19,9 +19,9 @@ const Buttons = ({ options, onLeaveFeedback }) => {
   );
 };
 
-// Buttons.propTypes = {
-//   options: propTypes.arrayOf(propTypes.string).isRequired,
-//   onLeaveFeedback: propTypes.func.isRequired,
-// };
+Buttons.propTypes = {
+  options: propTypes.arrayOf(propTypes.string).isRequired,
+  onLeaveFeedback: propTypes.func.isRequired,
+};
 
 export default Buttons;
